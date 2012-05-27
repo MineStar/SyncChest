@@ -3,9 +3,9 @@ package de.minestar.syncchest.commands;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
-import de.minestar.minestarlibrary.commands.AbstractCommand;
-import de.minestar.minestarlibrary.commands.AbstractSuperCommand;
 import de.minestar.syncchest.core.Core;
+import de.minestar.syncchest.library.AbstractCommand;
+import de.minestar.syncchest.library.AbstractSuperCommand;
 
 public class SyncChestCommand extends AbstractSuperCommand {
 

@@ -8,11 +8,11 @@ import java.sql.ResultSet;
 import org.bukkit.Location;
 import org.bukkit.Material;
 
-import de.minestar.minestarlibrary.database.AbstractDatabaseHandler;
-import de.minestar.minestarlibrary.database.DatabaseConnection;
-import de.minestar.minestarlibrary.database.DatabaseUtils;
-import de.minestar.minestarlibrary.utils.ConsoleUtils;
 import de.minestar.syncchest.core.Core;
+import de.minestar.syncchest.library.AbstractDatabaseHandler;
+import de.minestar.syncchest.library.ConsoleUtils;
+import de.minestar.syncchest.library.DatabaseConnection;
+import de.minestar.syncchest.library.DatabaseUtils;
 import de.minestar.syncchest.units.DataNode;
 import de.minestar.syncchest.units.SyncChest;
 import de.minestar.syncchest.utils.BlockVector;

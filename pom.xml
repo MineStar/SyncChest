@@ -60,18 +60,8 @@
 		</dependency>
 		<dependency>
 			<groupId>de.minestar</groupId>
-			<artifactId>minestarlibrary</artifactId>
-			<version>1.8</version>
-		</dependency>
-		<dependency>
-			<groupId>de.minestar</groupId>
 			<artifactId>FalseBookCore</artifactId>
 			<version>0.92.3alpha</version>
-		</dependency>
-		<dependency>
-			<groupId>de.minestar</groupId>
-			<artifactId>MinestarCore</artifactId>
-			<version>1.6.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bukkit</groupId>

@@ -2,14 +2,14 @@ package de.minestar.syncchest.core;
 
 import org.bukkit.plugin.PluginManager;
 
-import de.minestar.minestarlibrary.AbstractCore;
-import de.minestar.minestarlibrary.commands.CommandList;
-import de.minestar.minestarlibrary.utils.ConsoleUtils;
 import de.minestar.syncchest.commands.AddCommand;
 import de.minestar.syncchest.commands.InfoCommand;
 import de.minestar.syncchest.commands.RemoveCommand;
 import de.minestar.syncchest.commands.SyncChestCommand;
 import de.minestar.syncchest.database.DatabaseManager;
+import de.minestar.syncchest.library.AbstractCore;
+import de.minestar.syncchest.library.CommandList;
+import de.minestar.syncchest.library.ConsoleUtils;
 import de.minestar.syncchest.listener.ActionListener;
 import de.minestar.syncchest.listener.InventoryListener;
 import de.minestar.syncchest.units.DataNode;

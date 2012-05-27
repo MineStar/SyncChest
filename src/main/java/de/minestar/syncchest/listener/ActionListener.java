@@ -18,9 +18,9 @@ import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
-import de.minestar.minestarlibrary.utils.PlayerUtils;
 import de.minestar.syncchest.core.Core;
 import de.minestar.syncchest.database.DatabaseManager;
+import de.minestar.syncchest.library.PlayerUtils;
 import de.minestar.syncchest.units.DataNode;
 import de.minestar.syncchest.units.SyncChest;
 import de.minestar.syncchest.utils.BlockVector;
