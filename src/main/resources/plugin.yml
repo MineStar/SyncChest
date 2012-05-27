@@ -1,0 +1,8 @@
+name: SyncChests
+main: de.minestar.syncchest.core.Core
+version: ${pom.version}
+depend: [MineStarLibrary, FalseBookCore, MinestarCore]
+commands:
+  sync:
+    description: SyncChest-related commands
+    usage: /sync <command>
