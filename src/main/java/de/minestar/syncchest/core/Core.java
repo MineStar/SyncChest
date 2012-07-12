@@ -1,5 +1,6 @@
 package de.minestar.syncchest.core;
 
+import org.bukkit.Location;
 import org.bukkit.plugin.PluginManager;
 
 import de.minestar.syncchest.commands.AddCommand;
@@ -13,8 +14,9 @@ import de.minestar.syncchest.library.ConsoleUtils;
 import de.minestar.syncchest.listener.ActionListener;
 import de.minestar.syncchest.listener.InventoryListener;
 import de.minestar.syncchest.units.DataNode;
+import de.minestar.syncchest.utils.BlockVector;
+import de.minestar.syncchest.utils.ChestUtils;
 import de.minestar.syncchest.utils.Permissions;
-
 public class Core extends AbstractCore {
     public static final String NAME = "SyncChests";
     private static Core INSTANCE = null;
@@ -96,5 +98,9 @@ public class Core extends AbstractCore {
 
     public static Core getInstance() {
        return INSTANCE;
+    }
+    
+    public boolean isSyncChest(Location location) {
+        return (ChestUtils.getSyncChest(this.dataNode, new BlockVector(location)) != null);
     }
 }
