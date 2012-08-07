@@ -29,15 +29,11 @@ import org.bukkit.entity.Player;
 public class PlayerUtils {
 
     /**
-     * Check if any player contains the name. At first it will search in online
-     * player by testing the display and the account name and when no result is
-     * found it will search in offline players data.
+     * Check if any player contains the name. At first it will search in online player by testing the display and the account name and when no result is found it will search in offline players data.
      * 
      * @param name
-     *            Part of the target nickname. It needn't be lower case, will
-     *            casted to lower case!
-     * @return <code>True</code> if an player's nickname or account is existing
-     *         that contains <code>name</code>, <code>false</code> if not
+     *            Part of the target nickname. It needn't be lower case, will casted to lower case!
+     * @return <code>True</code> if an player's nickname or account is existing that contains <code>name</code>, <code>false</code> if not
      */
     public static boolean isPlayerExisting(String name) {
         name = name.toLowerCase();
@@ -56,13 +52,11 @@ public class PlayerUtils {
     }
 
     /**
-     * Check if the player name is existing. This method is very case sensitive
-     * and only works if the player name is 1:1 the correct name!
+     * Check if the player name is existing. This method is very case sensitive and only works if the player name is 1:1 the correct name!
      * 
      * @param name
      *            Correct name of the player
-     * @return <code>True</code> when player is on the server or was on the
-     *         server,otherwise <code>false</code>
+     * @return <code>True</code> when player is on the server or was on the server,otherwise <code>false</code>
      */
     public static boolean isPlayerExactExisting(String name) {
 
@@ -78,8 +72,7 @@ public class PlayerUtils {
     }
 
     /**
-     * @return Sorted Set of all player's nicknames who has ever conntected to
-     *         the server. The nicknames are all in lowercase!
+     * @return Sorted Set of all player's nicknames who has ever conntected to the server. The nicknames are all in lowercase!
      */
     public static String[] getAllPlayerNames() {
 
@@ -93,14 +86,11 @@ public class PlayerUtils {
     }
 
     /**
-     * Searches for the correct account name of the player by searching in nick-
-     * and accountnames of all online player and accountnames of all offline
-     * players.
+     * Searches for the correct account name of the player by searching in nick- and accountnames of all online player and accountnames of all offline players.
      * 
      * @param name
      *            Part of the target nickname
-     * @return The nickname of the player with the lowest difference to
-     *         <code>nick</code>.
+     * @return The nickname of the player with the lowest difference to <code>nick</code>.
      */
     public static String getCorrectPlayerName(String name) {
 
@@ -116,8 +106,7 @@ public class PlayerUtils {
      * 
      * @param name
      *            Part of the targeted account name
-     * @return <code>Null</code> when no name was found, otherwise the account
-     *         name
+     * @return <code>Null</code> when no name was found, otherwise the account name
      */
     public static String getOfflinePlayerName(String name) {
         name = name.toLowerCase();
@@ -140,12 +129,10 @@ public class PlayerUtils {
     }
 
     /**
-     * Searching for a player having the case insensitive name. If not found,
-     * the first player that contains the name is returned.
+     * Searching for a player having the case insensitive name. If not found, the first player that contains the name is returned.
      * 
      * @param name
-     *            Part of the target nickname. Needn't be in lower case, will
-     *            cast to it!
+     *            Part of the target nickname. Needn't be in lower case, will cast to it!
      * @return <code>Null</code> if no player was found, else the player object
      */
     public static Player getOnlinePlayer(String name) {
@@ -185,8 +172,7 @@ public class PlayerUtils {
 
     /**
      * <code>IMPORTANT!</code> <br>
-     * It will return ALWAYS an object doesn't matter the player is existing or
-     * not! <br>
+     * It will return ALWAYS an object doesn't matter the player is existing or not! <br>
      * Searches for the name in offline player files.
      * 
      * @param name
@@ -203,9 +189,7 @@ public class PlayerUtils {
 
     // BLANK MESSAGE
     /**
-     * Sending a blank uncolored message with the prefix
-     * <code>[PLUGIN_NAME]</code> to the player using the method
-     * <code>player.sendMessage(msg)</code>
+     * Sending a blank uncolored message with the prefix <code>[PLUGIN_NAME]</code> to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -219,8 +203,7 @@ public class PlayerUtils {
     }
 
     /**
-     * Sending a blank uncolored message to the player using the method
-     * <code>player.sendMessage(msg)</code>
+     * Sending a blank uncolored message to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -234,8 +217,7 @@ public class PlayerUtils {
     // COLORED MESSAGE
 
     /**
-     * Sending a colored message with the prefix <code>[PLUGIN_NAME]</code> to
-     * the player using the method <code>player.sendMessage(msg)</code>
+     * Sending a colored message with the prefix <code>[PLUGIN_NAME]</code> to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -251,8 +233,7 @@ public class PlayerUtils {
     }
 
     /**
-     * Sending a colored message to the player using the method
-     * <code>player.sendMessage(msg)</code>
+     * Sending a colored message to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -267,8 +248,7 @@ public class PlayerUtils {
 
     // INFO
     /**
-     * Sending a gray colored message with the prefix <code>[PLUGIN_NAME]</code>
-     * to the player using the method <code>player.sendMessage(msg)</code>
+     * Sending a gray colored message with the prefix <code>[PLUGIN_NAME]</code> to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -282,8 +262,7 @@ public class PlayerUtils {
     }
 
     /**
-     * Sending a gray colored message to the player using the method
-     * <code>player.sendMessage(msg)</code>
+     * Sending a gray colored message to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -296,9 +275,7 @@ public class PlayerUtils {
 
     // SUCCESS
     /**
-     * Sending a green colored message with the prefix
-     * <code>[PLUGIN_NAME]</code> to the player using the method
-     * <code>player.sendMessage(msg)</code>
+     * Sending a green colored message with the prefix <code>[PLUGIN_NAME]</code> to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -312,8 +289,7 @@ public class PlayerUtils {
     }
 
     /**
-     * Sending a green colored message to the player using the method
-     * <code>player.sendMessage(msg)</code>
+     * Sending a green colored message to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -326,8 +302,7 @@ public class PlayerUtils {
 
     // ERROR
     /**
-     * Sending a red colored message with the prefix <code>[PLUGIN_NAME]</code>
-     * to the player using the method <code>player.sendMessage(msg)</code>
+     * Sending a red colored message with the prefix <code>[PLUGIN_NAME]</code> to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -341,8 +316,7 @@ public class PlayerUtils {
     }
 
     /**
-     * Sending a red colored message to the player using the method
-     * <code>player.sendMessage(msg)</code>
+     * Sending a red colored message to the player using the method <code>player.sendMessage(msg)</code>
      * 
      * @param player
      *            The recipient
@@ -354,16 +328,14 @@ public class PlayerUtils {
     }
 
     /**
-     * Sends a list of dark red colored examples for commands with possible
-     * pluginname to the player
+     * Sends a list of dark red colored examples for commands with possible pluginname to the player
      * 
      * @param player
      *            The recipient
      * @param pluginName
      *            Name of the plugin sending the message to the sender.
      * @param syntax
-     *            Syntax of the commands, beginns normally with a
-     *            <code>"/"</code>
+     *            Syntax of the commands, beginns normally with a <code>"/"</code>
      * @param examples
      *            List of examples for the Command<
      */

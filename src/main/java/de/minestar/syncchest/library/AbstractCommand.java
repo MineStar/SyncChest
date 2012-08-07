@@ -25,10 +25,7 @@ import org.bukkit.entity.Player;
 import com.bukkit.gemo.utils.UtilPermissions;
 
 /**
- * Represents a command with a fixed number of arguments and no subcommands. If
- * you want a command with at least number of arguments, use ExtendedCommand. If
- * you want a command which has a function/or not AND subcommands, use
- * SuperCommand.
+ * Represents a command with a fixed number of arguments and no subcommands. If you want a command with at least number of arguments, use ExtendedCommand. If you want a command which has a function/or not AND subcommands, use SuperCommand.
  * 
  * You have to register the command by creating a command list
  * 
@@ -58,11 +55,9 @@ public abstract class AbstractCommand {
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      */
     public AbstractCommand(String syntax, String arguments, String node) {
         this.syntax = syntax;
@@ -79,11 +74,9 @@ public abstract class AbstractCommand {
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      */
     public AbstractCommand(String pluginName, String syntax, String arguments, String node) {
         this(syntax, arguments, node);
@@ -91,10 +84,7 @@ public abstract class AbstractCommand {
     }
 
     /**
-     * Call this command to run it functions. It checks at first whether the
-     * sender has enough rights to use this. Also it checks whether it uses the
-     * correct snytax. If both is correct, the real function of the command is
-     * called
+     * Call this command to run it functions. It checks at first whether the sender has enough rights to use this. Also it checks whether it uses the correct snytax. If both is correct, the real function of the command is called
      * 
      * @param args
      *            The arguments of this command
@@ -131,9 +121,7 @@ public abstract class AbstractCommand {
     public abstract void execute(String[] args, Player player);
 
     /**
-     * Override this method to allow a command accessed by console. When this
-     * method is not override and console tries to execute the command, the
-     * command is canceled and an error message is sent
+     * Override this method to allow a command accessed by console. When this method is not override and console tries to execute the command, the command is canceled and an error message is sent
      * 
      * @param args
      *            The arguments of the command
@@ -147,8 +135,7 @@ public abstract class AbstractCommand {
     /**
      * @param sender
      *            The command caller
-     * @return True when the sender has enough rights to use the command Or the
-     *         permissionnode is empty, so everybody can use it
+     * @return True when the sender has enough rights to use the command Or the permissionnode is empty, so everybody can use it
      */
     protected boolean hasRights(CommandSender sender) {
         if (sender instanceof Player)
@@ -158,8 +145,7 @@ public abstract class AbstractCommand {
     }
 
     /**
-     * Compares the count of arguments has and the count of arguments the
-     * command should have.
+     * Compares the count of arguments has and the count of arguments the command should have.
      * 
      * @param args
      *            The arguments of the command given by the command caller
@@ -227,16 +213,14 @@ public abstract class AbstractCommand {
     }
 
     /**
-     * Checks a permission node for the player and when the player doesn't have
-     * the permission, the message <code>NO_RIGHT</code> is printed! <br>
+     * Checks a permission node for the player and when the player doesn't have the permission, the message <code>NO_RIGHT</code> is printed! <br>
      * Use this method for extended commands with multiple permission checks
      * 
      * @param sender
      *            The possible permission owner
      * @param node
      *            The permission node
-     * @return <code>True</code> if player has permissions, <code>false</code>
-     *         if not!
+     * @return <code>True</code> if player has permissions, <code>false</code> if not!
      */
     protected boolean checkSpecialPermission(CommandSender sender, String node) {
         if (sender instanceof ConsoleCommandSender)

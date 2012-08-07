@@ -24,9 +24,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 /**
- * This is a Wrapper for ConsoleUtils and PlayerUtils chat methods. When using a
- * command which can be executed by player and console you should use this
- * method to get the right output
+ * This is a Wrapper for ConsoleUtils and PlayerUtils chat methods. When using a command which can be executed by player and console you should use this method to get the right output
  * 
  * @author Meldanor, GeMoschen
  * 
@@ -34,8 +32,7 @@ import org.bukkit.entity.Player;
 public class ChatUtils {
 
     /**
-     * Concat all strings in the array to one string seperated by single space
-     * character
+     * Concat all strings in the array to one string seperated by single space character
      * 
      * @param args
      *            The string array containing the
@@ -102,14 +99,11 @@ public class ChatUtils {
 
     /**
      * Sending an information to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendInfo(Player, String, String) PlayerUtils.sendInfo} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendInfo(Player, String, String) PlayerUtils.sendInfo} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param pluginName
      *            The name of the plugin
      * @param message
@@ -126,14 +120,11 @@ public class ChatUtils {
 
     /**
      * Sending an information to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendInfo(Player, String) PlayerUtils.sendInfo} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendInfo(Player, String) PlayerUtils.sendInfo} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param message
      *            The message to be send
      */
@@ -148,15 +139,11 @@ public class ChatUtils {
 
     /**
      * Sending an success hint to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendSuccess(Player, String, String)
-     * PlayerUtils.sendSuccess} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendSuccess(Player, String, String) PlayerUtils.sendSuccess} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param pluginName
      *            The name of the plugin
      * @param message
@@ -173,14 +160,11 @@ public class ChatUtils {
 
     /**
      * Sending an success hint to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendSuccess(Player, String) PlayerUtils.sendSuccess} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendSuccess(Player, String) PlayerUtils.sendSuccess} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param message
      *            The message to be send
      */
@@ -195,15 +179,11 @@ public class ChatUtils {
 
     /**
      * Sending an error to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendError(Player, String, String)
-     * PlayerUtils.sendError} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printError(String, String) ConsoleUtils.printError} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendError(Player, String, String) PlayerUtils.sendError} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printError(String, String) ConsoleUtils.printError} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param pluginName
      *            The name of the plugin
      * @param message
@@ -220,14 +200,11 @@ public class ChatUtils {
 
     /**
      * Sending an error to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendError(Player, String) PlayerUtils.sendError} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printError(String) ConsoleUtils.printError} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendError(Player, String) PlayerUtils.sendError} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printError(String) ConsoleUtils.printError} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param message
      *            The message to be send
      */
@@ -242,15 +219,11 @@ public class ChatUtils {
 
     /**
      * Sending an blank message to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendBlankMessage(Player, String, String)
-     * PlayerUtils.sendBlankMessage} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendBlankMessage(Player, String, String) PlayerUtils.sendBlankMessage} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param pluginName
      *            The name of the plugin
      * @param message
@@ -267,15 +240,11 @@ public class ChatUtils {
 
     /**
      * Sending an blank message to the reciever. <br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendBlankMessage(Player, String)
-     * PlayerUtils.sendBlankMessage} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo} <br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendBlankMessage(Player, String) PlayerUtils.sendBlankMessage} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo} <br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param message
      *            The message to be send
      */
@@ -290,16 +259,11 @@ public class ChatUtils {
 
     /**
      * Sending an colored message to the reciever.<br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendMessage(Player, ChatColor, String, String)
-     * PlayerUtils.sendMessage} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo}.
-     * This will ignore the color<br>
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendMessage(Player, ChatColor, String, String) PlayerUtils.sendMessage} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String, String) ConsoleUtils.printInfo}. This will ignore the color<br>
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param pluginName
      *            The name of the plugin
      * @param message
@@ -316,16 +280,11 @@ public class ChatUtils {
 
     /**
      * Sending an colored message to the reciever.<br>
-     * When <code>reciever</code> is a {@link Player}, it will use
-     * {@link PlayerUtils#sendMessage(Player, ChatColor, String)
-     * PlayerUtils.sendMessage} <br>
-     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use
-     * {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo}. This will
-     * ignore the color
+     * When <code>reciever</code> is a {@link Player}, it will use {@link PlayerUtils#sendMessage(Player, ChatColor, String) PlayerUtils.sendMessage} <br>
+     * When <code>reciever</code> is a {@link ConsoleCommandSender}, it will use {@link ConsoleUtils#printInfo(String) ConsoleUtils.printInfo}. This will ignore the color
      * 
      * @param reciever
-     *            The reciever of the message. Must be an instance of
-     *            {@link ConsoleCommandSender} or {@link Player}
+     *            The reciever of the message. Must be an instance of {@link ConsoleCommandSender} or {@link Player}
      * @param message
      *            The message to be send
      */
@@ -339,8 +298,7 @@ public class ChatUtils {
     }
 
     /**
-     * Throws an exception when the sender is no instance of
-     * ConsoleCommandSender nor Player
+     * Throws an exception when the sender is no instance of ConsoleCommandSender nor Player
      * 
      * @param sender
      *            The false class

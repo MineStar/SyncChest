@@ -91,8 +91,7 @@ public class BlockVector implements Comparable<BlockVector> {
     }
 
     /**
-     * Create a BlockVector from a given string. The string must have the same
-     * syntax as <code>@toString()</code>
+     * Create a BlockVector from a given string. The string must have the same syntax as <code>@toString()</code>
      * 
      * @param string
      * @return the BlockVector for this string, or null if it fails
@@ -110,8 +109,7 @@ public class BlockVector implements Comparable<BlockVector> {
     }
 
     /**
-     * Returns a new BlockVector that is relative to this BlockVector with the
-     * given positions
+     * Returns a new BlockVector that is relative to this BlockVector with the given positions
      * 
      * @param x
      * @param y

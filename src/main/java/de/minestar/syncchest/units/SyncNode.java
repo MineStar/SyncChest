@@ -95,16 +95,14 @@ public class SyncNode {
     }
 
     /**
-     * @return <b>true</b> if this node contains doublechests, otherwise
-     *         <b>false</b>
+     * @return <b>true</b> if this node contains doublechests, otherwise <b>false</b>
      */
     public boolean isDoubleChest() {
         return doubleChest;
     }
 
     /**
-     * @return <b>true</b> if this node is currently locked, otherwise
-     *         <b>false</b>
+     * @return <b>true</b> if this node is currently locked, otherwise <b>false</b>
      */
     public boolean isLocked() {
         return locked;
@@ -222,8 +220,7 @@ public class SyncNode {
     }
 
     /**
-     * Synchronize all Inventories on startup. (Based on the first chest of the
-     * ArrayList)
+     * Synchronize all Inventories on startup. (Based on the first chest of the ArrayList)
      * 
      * @return <b>true</b> if synchronizing went fine, otherwise <b>false</b>
      */

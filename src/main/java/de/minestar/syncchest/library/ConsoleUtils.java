@@ -95,8 +95,7 @@ public class ConsoleUtils {
     }
 
     /**
-     * Prints an error message with the exception stacktrace to the console with
-     * the prefix <br>
+     * Prints an error message with the exception stacktrace to the console with the prefix <br>
      * <code>EXCEPTION! </code>
      * 
      * @param e
@@ -109,8 +108,7 @@ public class ConsoleUtils {
     }
 
     /**
-     * Prints an error message with the exception stacktrace to the console with
-     * the prefix <br>
+     * Prints an error message with the exception stacktrace to the console with the prefix <br>
      * <code>[ PLUGIN ] : EXCEPTION! </code>
      * 
      * @param e

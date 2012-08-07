@@ -38,20 +38,16 @@ public abstract class AbstractSuperCommand extends AbstractCommand {
 
     /**
      * A super command holds many subcommands. <br>
-     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a
-     * '/' !
+     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a '/' !
      * 
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      * @param hasFunction
-     *            Set this to true when SuperCommand has another function
-     *            instead of only holding sub commands
+     *            Set this to true when SuperCommand has another function instead of only holding sub commands
      * @param subCommands
      *            A list of sub commands, can also be SuperCommands
      */
@@ -68,22 +64,18 @@ public abstract class AbstractSuperCommand extends AbstractCommand {
 
     /**
      * A super command holds many subcommands. <br>
-     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a
-     * '/' !
+     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a '/' !
      * 
      * @param pluginName
      *            Name of the plugin, without brackets [ ]
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      * @param hasFunction
-     *            Set this to true when SuperCommand has another function
-     *            instead of only holding sub commands
+     *            Set this to true when SuperCommand has another function instead of only holding sub commands
      * @param subCommands
      *            A list of sub commands, can also be SuperCommands
      */
@@ -94,21 +86,17 @@ public abstract class AbstractSuperCommand extends AbstractCommand {
 
     /**
      * A super command holds many subcommands. <br>
-     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a
-     * '/' ! <br>
-     * This constructs a SuperCommand which only holds subCommands, but have no
-     * function!
+     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a '/' ! <br>
+     * This constructs a SuperCommand which only holds subCommands, but have no function!
      * 
      * @param pluginName
      *            Name of the plugin, without brackets [ ]
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      * @param subCommands
      *            A list of sub commands, can also be SuperCommands
      */
@@ -118,19 +106,15 @@ public abstract class AbstractSuperCommand extends AbstractCommand {
 
     /**
      * A super command holds many subcommands. <br>
-     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a
-     * '/' ! <br>
-     * This constructs a SuperCommand which only holds subCommands, but have no
-     * function!
+     * <code>HINT!</code> The subcommands' syntax aren't allowed to start with a '/' ! <br>
+     * This constructs a SuperCommand which only holds subCommands, but have no function!
      * 
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      * @param subCommands
      *            A list of sub commands, can also be SuperCommands
      */
@@ -173,8 +157,7 @@ public abstract class AbstractSuperCommand extends AbstractCommand {
     }
 
     /**
-     * Searches for sub commands by comparing the first argument with the syntax
-     * of the sub commands.
+     * Searches for sub commands by comparing the first argument with the syntax of the sub commands.
      * 
      * @param args
      *            The arguments that may contains the syntax

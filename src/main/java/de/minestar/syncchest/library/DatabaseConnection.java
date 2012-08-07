@@ -56,17 +56,14 @@ public class DatabaseConnection {
     }
 
     /**
-     * Creates a connection to a SQLLite database. When the database is not
-     * existing in moment of creating a connection to it, a new database will be
-     * created
+     * Creates a connection to a SQLLite database. When the database is not existing in moment of creating a connection to it, a new database will be created
      * 
      * @param pluginName
      *            Name of the plugin which uses the class
      * @param folder
      *            Where the database will be stored
      * @param databaseName
-     *            Name of the file. Do not use the file ending '.db', it will
-     *            added automatically
+     *            Name of the file. Do not use the file ending '.db', it will added automatically
      */
     public DatabaseConnection(String pluginName, String folder, String databaseName) {
         this(pluginName);
@@ -74,20 +71,14 @@ public class DatabaseConnection {
     }
 
     /**
-     * Creates a connection to database specificed by <code>type</code>. The
-     * config must contain the setting nodes given by
-     * {@link DatabaseUtils#createDatabaseConfig(DatabaseType, File, String)}
+     * Creates a connection to database specificed by <code>type</code>. The config must contain the setting nodes given by {@link DatabaseUtils#createDatabaseConfig(DatabaseType, File, String)}
      * 
      * @param pluginName
      *            Name of the plugin which uses the class
      * @param type
-     *            The type of the Database , see {@link DatabaseType} for
-     *            possible values
+     *            The type of the Database , see {@link DatabaseType} for possible values
      * @param config
-     *            The configuration. Must contain the same setting nods as
-     *            created as by this method
-     *            {@link DatabaseUtils#createDatabaseConfig(DatabaseType, File, String)}
-     * <br>
+     *            The configuration. Must contain the same setting nods as created as by this method {@link DatabaseUtils#createDatabaseConfig(DatabaseType, File, String)} <br>
      *            The config must be loaded!
      */
     public DatabaseConnection(String pluginName, DatabaseType type, YamlConfiguration config) {
@@ -136,8 +127,7 @@ public class DatabaseConnection {
      * @param folder
      *            Where the database will be stored
      * @param databaseName
-     *            Name of the file. Do not use the file ending '.db', it will
-     *            added automatically
+     *            Name of the file. Do not use the file ending '.db', it will added automatically
      */
     private void createSQLLiteConnection(String folder, String databaseName) {
         try {

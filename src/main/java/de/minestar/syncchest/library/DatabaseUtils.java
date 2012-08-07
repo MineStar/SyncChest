@@ -30,16 +30,12 @@ import org.bukkit.configuration.file.YamlConfiguration;
 public class DatabaseUtils {
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * reading and executing them and creats a database structure.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods reading and executing them and creats a database structure.
      * 
      * @param ressource
-     *            The InputStream to the file in the <code>*.jar</code> which
-     *            can get by <br>
+     *            The InputStream to the file in the <code>*.jar</code> which can get by <br>
      *            <code>getClass().getResourceAsStream()</code> <br>
-     *            Hint: If the target file is in the first package, you have to
-     *            use <code>/targetFile</code> instead of
-     *            <code>targetFile</code>!
+     *            Hint: If the target file is in the first package, you have to use <code>/targetFile</code> instead of <code>targetFile</code>!
      * @param con
      *            The connection to the database
      * @param pluginName
@@ -55,8 +51,7 @@ public class DatabaseUtils {
     }
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * reading and executing them and creats a database structure.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods reading and executing them and creats a database structure.
      * 
      * @param file
      *            The *.sql batch file
@@ -72,8 +67,7 @@ public class DatabaseUtils {
     }
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * reading and executing them and creats a database structure.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods reading and executing them and creats a database structure.
      * 
      * @param filePath
      *            The path to the .sql batch file
@@ -89,8 +83,7 @@ public class DatabaseUtils {
     }
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * read and execute them and creats a database structure.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods read and execute them and creats a database structure.
      * 
      * @param bReader
      *            The BufferedReader of the resource
@@ -108,8 +101,7 @@ public class DatabaseUtils {
     }
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * read and execute them.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods read and execute them.
      * 
      * @param file
      *            The *.sql batch file
@@ -125,8 +117,7 @@ public class DatabaseUtils {
     }
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * read and execute them.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods read and execute them.
      * 
      * @param filePath
      *            The path to the .sql batch file
@@ -142,16 +133,12 @@ public class DatabaseUtils {
     }
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * read and execute them.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods read and execute them.
      * 
      * @param ressource
-     *            The InputStream to the file in the <code>*.jar</code> which
-     *            can get by <br>
+     *            The InputStream to the file in the <code>*.jar</code> which can get by <br>
      *            <code>getClass().getResourceAsStream()</code> <br>
-     *            Hint: If the target file is in the first package, you have to
-     *            use <code>/targetFile</code> instead of
-     *            <code>targetFile</code>!
+     *            Hint: If the target file is in the first package, you have to use <code>/targetFile</code> instead of <code>targetFile</code>!
      * @param con
      *            The connection to the database
      * @param pluginName
@@ -167,8 +154,7 @@ public class DatabaseUtils {
     }
 
     /**
-     * Read a <code>*.sql</code> batch containing SQL statements. This methods
-     * read and execute them.
+     * Read a <code>*.sql</code> batch containing SQL statements. This methods read and execute them.
      * 
      * @param bReader
      *            The BufferedReader of the resource
@@ -198,10 +184,8 @@ public class DatabaseUtils {
     }
 
     /**
-     * Creates a default configuration for your database connection depending on
-     * the database type. <br>
-     * Depedning on <code>sqlType</code> the config will have the followning
-     * structure: <br>
+     * Creates a default configuration for your database connection depending on the database type. <br>
+     * Depedning on <code>sqlType</code> the config will have the followning structure: <br>
      * <code>TYPE_MYSQL <br>
      * Host=host <br>
      * Port=port <br>

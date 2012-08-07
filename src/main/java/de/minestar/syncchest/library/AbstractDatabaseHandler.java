@@ -22,9 +22,7 @@ import java.io.File;
 import java.sql.Connection;
 
 /**
- * A super class for all database handler which has the same base structure like
- * establishing a database connection, check the structure and creating
- * statements.
+ * A super class for all database handler which has the same base structure like establishing a database connection, check the structure and creating statements.
  * 
  * @author Meldanor
  * 
@@ -38,13 +36,9 @@ public abstract class AbstractDatabaseHandler {
 
     /**
      * Creates a new DatabaseHandler and do the followning things: <br>
-     * 1. Create a database connection depending on your implementation of
-     * <code>createConnection</code> <br>
-     * 2. Create a basic database structure like creating tables. This can be
-     * done by reading a sql file or executing some single statements Depends on
-     * your implementation of <code>createStructure</code> <br>
-     * 3. Initiate Prepare Statements depending on your implementation of
-     * <code>createStatements</code>
+     * 1. Create a database connection depending on your implementation of <code>createConnection</code> <br>
+     * 2. Create a basic database structure like creating tables. This can be done by reading a sql file or executing some single statements Depends on your implementation of <code>createStructure</code> <br>
+     * 3. Initiate Prepare Statements depending on your implementation of <code>createStatements</code>
      * 
      * @param pluginName
      *            The name of the plugin using the class
@@ -60,8 +54,7 @@ public abstract class AbstractDatabaseHandler {
     }
 
     /**
-     * Initiate the database handler calling the functions
-     * <code>createConnection, createStructure and createStatements</code>
+     * Initiate the database handler calling the functions <code>createConnection, createStructure and createStatements</code>
      * 
      * @param pluginName
      *            Name of the plugin which uses the class
@@ -80,15 +73,13 @@ public abstract class AbstractDatabaseHandler {
 
     }
     /**
-     * This methods establish a connection to your database. The dataFolder
-     * object can be used to read a config(which is highly recommended)
+     * This methods establish a connection to your database. The dataFolder object can be used to read a config(which is highly recommended)
      * 
      * @param pluginName
      *            Name of the plugin which uses the class
      * @param dataFolder
      *            The datafolder of the plugin
-     * @return The database connection object which is automatically assigned to
-     *         the private variable <code>dbConnection</code>
+     * @return The database connection object which is automatically assigned to the private variable <code>dbConnection</code>
      */
     protected abstract DatabaseConnection createConnection(String pluginName, File dataFolder) throws Exception;
 
@@ -113,9 +104,7 @@ public abstract class AbstractDatabaseHandler {
     protected abstract void createStatements(String pluginName, Connection con) throws Exception;
 
     /**
-     * Override this method to import an update. Use this to import updates from
-     * a SQL Batch file, which will only executed once. Remember to delete the
-     * update.sql, it will loaded after reload again!
+     * Override this method to import an update. Use this to import updates from a SQL Batch file, which will only executed once. Remember to delete the update.sql, it will loaded after reload again!
      * 
      * @param pluginName
      *            Name of plugin
@@ -129,8 +118,7 @@ public abstract class AbstractDatabaseHandler {
     }
 
     /**
-     * Close the connection to the database. Call this method in "onDisable"
-     * method
+     * Close the connection to the database. Call this method in "onDisable" method
      */
     public void closeConnection() {
         if (dbConnection != null)
@@ -138,8 +126,7 @@ public abstract class AbstractDatabaseHandler {
     }
 
     /**
-     * @return <code>True</code> when there is a database connection, otherwise
-     *         <code>false</code>
+     * @return <code>True</code> when there is a database connection, otherwise <code>false</code>
      */
     public boolean hasConnection() {
         return dbConnection != null;

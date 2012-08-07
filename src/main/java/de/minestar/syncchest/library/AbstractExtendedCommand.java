@@ -19,9 +19,7 @@
 package de.minestar.syncchest.library;
 
 /**
- * Represents a command with a varible number of Arguments. The only difference
- * to Command is, that the argumentcount given by the constructor is the
- * argumentcount the command must have atleast!
+ * Represents a command with a varible number of Arguments. The only difference to Command is, that the argumentcount given by the constructor is the argumentcount the command must have atleast!
  * 
  * @author Meldanor, GeMoschen
  * 
@@ -29,36 +27,30 @@ package de.minestar.syncchest.library;
 public abstract class AbstractExtendedCommand extends AbstractCommand {
 
     /**
-     * Creating an ExtendedCommand which can have at least arguments than given
-     * in the paramater
+     * Creating an ExtendedCommand which can have at least arguments than given in the paramater
      * 
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      */
     public AbstractExtendedCommand(String syntax, String arguments, String node) {
         super(syntax, arguments, node);
     }
 
     /**
-     * Creating an ExtendedCommand which can have at least arguments than given
-     * in the paramater
+     * Creating an ExtendedCommand which can have at least arguments than given in the paramater
      * 
      * @param pluginName
      *            Name of the plugin, without brackets [ ]
      * @param syntax
      *            The label of the command. Example : /who
      * @param arguments
-     *            The arguments covered with Tags < >. Additional arguments can
-     *            be covered by [ ]
+     *            The arguments covered with Tags < >. Additional arguments can be covered by [ ]
      * @param node
-     *            The permission needed to call this command. Leave it empty to
-     *            allow this command to everybody
+     *            The permission needed to call this command. Leave it empty to allow this command to everybody
      */
     public AbstractExtendedCommand(String pluginName, String syntax, String arguments, String node) {
         super(pluginName, syntax, arguments, node);
