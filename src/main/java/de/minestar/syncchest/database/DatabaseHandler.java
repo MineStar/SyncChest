@@ -17,11 +17,11 @@ import de.minestar.syncchest.units.DataNode;
 import de.minestar.syncchest.units.SyncChest;
 import de.minestar.syncchest.utils.BlockVector;
 
-public class DatabaseManager extends AbstractDatabaseHandler {
+public class DatabaseHandler extends AbstractDatabaseHandler {
 
     private PreparedStatement addSyncChest, removeSyncChest, loadSyncChests;
 
-    public DatabaseManager(String pluginName, File dataFolder) {
+    public DatabaseHandler(String pluginName, File dataFolder) {
         super(pluginName, dataFolder);
     }
 

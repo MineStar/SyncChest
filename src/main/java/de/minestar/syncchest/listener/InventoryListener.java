@@ -50,7 +50,6 @@ public class InventoryListener implements Listener {
 
         // CANCEL, IF WAITING FOR UPDATE
         if (syncChest.getParent().isLocked()) {
-            System.out.println("node is locked");
             event.setCancelled(true);
             return;
         }

@@ -7,7 +7,7 @@ import de.minestar.syncchest.commands.AddCommand;
 import de.minestar.syncchest.commands.InfoCommand;
 import de.minestar.syncchest.commands.RemoveCommand;
 import de.minestar.syncchest.commands.SyncChestCommand;
-import de.minestar.syncchest.database.DatabaseManager;
+import de.minestar.syncchest.database.DatabaseHandler;
 import de.minestar.syncchest.library.AbstractCore;
 import de.minestar.syncchest.library.CommandList;
 import de.minestar.syncchest.library.ConsoleUtils;
@@ -25,7 +25,7 @@ public class Core extends AbstractCore {
      * Manager
      */
     private DataNode dataNode;
-    private DatabaseManager databaseManager;
+    private DatabaseHandler databaseManager;
 
     /**
      * Listener
@@ -44,7 +44,7 @@ public class Core extends AbstractCore {
 
     @Override
     protected boolean createManager() {
-        this.databaseManager = new DatabaseManager("SyncChests", this.getDataFolder());
+        this.databaseManager = new DatabaseHandler("SyncChests", this.getDataFolder());
         this.dataNode = this.databaseManager.loadSyncChests();
         return true;
     }
